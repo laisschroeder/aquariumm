@@ -1,0 +1,314 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Aquarium</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="style.css">
+      <style>
+          /* Personalize some colors and spacing */
+          .navbar {
+              background-color: #4ac6f7;
+          }
+          .navbar-brand, .nav-link {
+              color: #fff;
+          }
+          .navbar-toggler-icon {
+              background-color: #fff;
+          }
+          .carousel-inner img {
+              max-height: 500px;
+              object-fit: cover;
+          }
+          .container {
+              margin-top: 30px;
+          }
+          .section-title {
+              font-size: 2rem;
+              color: #006994;
+              margin-bottom: 20px;
+          }
+          .carousel-control-prev-icon, .carousel-control-next-icon {
+              background-color: #000000;
+          }
+          .card-body {
+              background-color: #ffffff;
+          }
+          .card {
+              margin-bottom: 10px;
+          }
+      </style>
+  </head>
+  <body>
+
+    
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+              <img class="logo" src="imagem golfinho.png" alt="Logo" style="width: 50px; height: auto;">
+              <a class="navbar-brand" href="#">Aquarium</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Espécies</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+
+      <h1 class="section-title text-center">Explorando a Vida Marinha e Aquários</h1>
+      <h2 class="section-title text-center">Descubra os segredos do oceano e o fascinante mundo dos aquários!</h2>
+
+      <!-- Search Bar -->
+      <div class="container text-center">
+          <div class="row">
+              <div class="col">
+                  <nav class="navbar navbar-light bg-light">
+                      <div class="container-fluid">
+                          <form class="d-flex w-100">
+                              <input class="form-control me-2" type="search" placeholder="Pesquise por espécies..." aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Buscar</button>
+                          </form>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+
+      <!-- Informational Section -->
+      <div class="container">
+          <h2 class="section-title text-center">Recifes de Coral</h2>
+          <p class="text-center">Entre os elementos mais valiosos da natureza estão os recifes de coral. Eles abrigam a maior variedade de espécies dos oceanos. Você pode pensar neles como florestas tropicais subaquáticas — cheias de componentes vivos e não vivos que, juntos, criam um dos ecossistemas mais exclusivos e importantes do mundo.</p>
+
+          <!-- Carousel for Coral Images -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="coral 4.jpg" class="d-block w-100" alt="Aquário 1">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="coral 5.jpg" class="d-block w-100" alt="Aquário 2">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="coral3.jpg" class="d-block w-100" alt="Aquário 3">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+
+      <!-- Section on Aquarium Types -->
+      <div class="container my-5">
+          <h2 class="section-title text-center">Tipos de Aquários</h2>
+          <p class="text-center">Aquários de casa são tanques onde se mantêm peixes, plantas e, às vezes, corais ou outros organismos marinhos. Existem dois tipos principais: de água doce e de água salgada. Os aquários de água doce são mais fáceis de manter e exigem menos equipamentos, enquanto os de água salgada, como os de recife, exigem mais cuidado com a qualidade da água.</p>
+          
+          <!-- Carousel for Aquarium Images -->
+          <div id="carouselExampleIndicators2" class="carousel slide">
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">/
+
+                    <!DOCTYPE html>
+  <html lang="pt">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vida Marinha e Aquários</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+          body {
+              background-color: #f0f8ff;
+              color: #333;
+          }
+          header {
+              background-color: #1fb3ee;
+              color: white;
+              padding: 20px 0;
+              text-align: center;
+          }
+          .carousel-item img {
+              object-fit: cover;
+              height: 400px;
+          }
+          .section-title {
+              text-align: center;
+              margin: 50px 0;
+              font-size: 2rem;
+              font-weight: bold;
+              color: #006994;
+          }
+          .info-card {
+              background-color: #00ffea;
+              border-radius: 10px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s ease;
+          }
+          .info-card:hover {
+              transform: scale(1.05);
+          }
+          .footer {
+              background-color: #006994;
+              color: white;
+              padding: 20px 0;
+              text-align: center;
+          }
+
+          
+      </style>
+  </head>
+  <body>
+     
+        
+
+      <!-- Carousel for Aquario Images -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button ty  pe="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="aquario 1.jpg" class="d-block w-100" alt="aquario 1">
+              </div>
+              <div class="carousel-item">
+                  <img src="aquario 2.jpg" class="d-block w-100" alt="aquario 2">
+              </div>
+              <div class="carousel-item">
+                  <img src="aquario 3.jpg" class="d-block w-100" alt="aquario 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+      <!-- Marine Life Section -->
+      <div class="container">
+          <div class="section-title">
+              <h2>Vida Marinha Fascinante</h2>
+              <p>A vida no oceano é incrível e cheia de surpresas. Vamos explorar algumas espécies marinhas incríveis!</p>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card info-card">
+                      <img src="tartaruga.jpg" class="card-img-top" alt="Tartaruga Marinha">
+                      <div class="card-body">
+                          <h5 class="card-title">Tartarugas Marinhas</h5>
+                          <p class="card-text">As tartarugas marinhas são conhecidas por sua longa vida e viagens épicas pelo oceano. Elas desempenham um papel crucial nos ecossistemas marinhos.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card info-card">
+                      <img src="tropicais 2.jpg" class="card-img-top" alt="Peixe Tropical">
+                      <div class="card-body">
+                          <h5 class="card-title">Peixes Tropicais</h5>
+                          <p class="card-text">Os peixes tropicais são famosos por suas cores vibrantes e habitats deslumbrantes nos recifes de corais, onde desempenham papéis vitais nos ecossistemas.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card info-card">
+                      <img src="baleia.png" class="card-img-top" alt="Baleia Azul">
+                      <div class="card-body">
+                          <h5 class="card-title">Baleia Azul</h5>
+                          <p class="card-text">A baleia azul, o maior animal do planeta, pode medir até 30 metros e pesar mais de 150 toneladas. Ela habita os oceanos e desempenha um papel importante na saúde marinha.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Aquarium Tips Section -->
+      <div class="container">
+          <div class="section-title">
+              <h2>Dicas para Criar um Aquário em Casa</h2>
+              <p>Montar um aquário pode ser uma experiência maravilhosa e educativa. Aqui estão algumas dicas para começar!</p>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="card info-card">
+                      <img src="aquario em casa.jpg" class="card-img-top" alt="Aquário em Casa">
+                      <div class="card-body">
+                          <h5 class="card-title">Escolha do Aquário e Algas</h5>
+                          <p class="card-text">Escolha um aquário do tamanho adequado para os peixes e plantas que você deseja criar. Certifique-se de que ele tenha a filtragem correta e a iluminação necessária. As algas mais comuns em aquários são as verde-esmeralda, as marrons, as filamentosas, as verde-azuladas e as BBA (Black Brush Algae). </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="card info-card">
+                      <img src="qualidade.jpg" class="card-img-top" alt="Água do Aquário">
+                      <div class="card-body">
+                          <h5 class="card-title">Qualidade da Água e Posição do Filtro</h5>
+                          <p class="card-text">Manter a água do aquário limpa e saudável é fundamental. Verifique regularmente os parâmetros da água, como pH, amônia e nitrito, para garantir o bem-estar dos seus peixes. Tenha cuidado também com o Filtro Interno, Posição e Circulação da Água.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <footer style="background-color: #5ac5f3; color: #000000; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            
+            <!-- Logos -->
+            <div style="flex: 1; display: flex; justify-content: flex-start;">
+                <img src="face.png" alt="Logo 1" style="height: 40px; margin-right: 20px;">
+                <img src="insta.png" alt="Logo 2" style="height: 40px; margin-right: 20px;">
+                <img src="yt.png" alt="Logo 2" style="height: 40px; margin-right: 20px;">
+                <img src="tt.png" alt="Logo 2" style="height: 40px; margin-right: 20px;">
+            </div>
+            
+            <!-- Informações de Contato -->
+            <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end; text-align: right;">
+                <p style="margin: 5px 0;">Email: Aquarium.espresa@contato
+                <p style="margin: 5px 0;">Telefone: (11) 1234-5678</p>
+                
+            </div>
+        </div>
+
+    </footer>
+    
+      <!-- Footer -->
+      <footer class="footer">
+          <p>&copy; 2025 Vida Marinha e Aquários - Todos os direitos reservados.</p>
+          
+
+      </footer>
+      
+
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+
+  
